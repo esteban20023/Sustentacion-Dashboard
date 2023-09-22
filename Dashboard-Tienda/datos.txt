@@ -1,0 +1,120 @@
+//datos del empleado
+id
+Nombre
+Apellidos
+Edad
+Fecha_Nacimiento
+Direccion
+Tipo_Documento
+Numero_Documento
+Telefono
+Tipo_Contrato
+Sueldo
+Cargo
+
+
+//datos del usuario
+idUsuario
+usuNombre
+usuApellido
+usuTipoDocumento
+usuDocumento
+usuTelefono
+usuCorreo
+usuDireccion
+usuGenero
+idCiudad
+
+//datos del inventario
+Nombre del producto
+Referencia del producto
+Cantidad
+PrecioUnitario
+Marca
+Proveedor
+idcategoria
+
+
+
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilos para el modal */
+        
+    </style>
+</head>
+<>
+    <!-- Botón para abrir el modal -->
+    <button class="open-modal-button" onclick="openModal()"><i class="fas fa-edit fa-icon"></i>Abrir Formulario</button>
+
+    <!-- Modal -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+<div class="container">
+                    <h2>Registro empleados</h2>
+                    <form action="/Contrels/crear-empleado.php" method="POST">
+                        <div style="float: left; width: 33%;">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" name="nombre" required><br>
+
+                            <label for="apellidos">Apellidos:</label><br>
+                            <input type="text" name="apellidos" required><br>
+
+                            <label for="edad">Edad:</label><br>
+                            <input type="number" name="edad" required><br>
+
+                            <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+                            <input type="date" name="fecha_nacimiento" required style="height: 2rem; width: 12rem;"><br>
+                        </div>
+
+                        <div style="float: left; width: 33%;">
+                            <label for="direccion">Dirección:</label><br>
+                            <input type="text" name="direccion" required><br>
+
+                            <label for="Tipo_Documento">Tipo de Documento:</label><br>
+                            <select name="Tipo_Documento" id="Tipo_Documento" style="height: 2rem; width: 12rem;">
+                                <option value="1">Cedula</option>
+                                <option value="2">Tarjeta de identidad</option>
+                                <option value="3">Cedula extrangeria</option>
+                            </select><br>
+
+                            <label for="numero_documento">Número de Documento:</label>
+                            <input type="text" name="numero_documento" required><br>
+
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" name="telefono" required><br>
+                        </div>
+
+                        <div style="float: left; width: 33%;">
+                            <label for="tipo_contrato">Tipo de Contrato:</label><br>
+                            <input type="text" name="tipo_contrato" required><br>
+
+                            <label for="sueldo">Sueldo:</label><br>
+                            <input type="number" name="sueldo" required><br>
+
+                            <label for="cargo">Cargo:</label><br>
+                            <input type="text" name="cargo" required><br><br>
+                            <button onclick="Guardar()" class="btn btn-danger boton" type="button" >
+                                <i class="fas fa-save"></i> Guardar
+                            </button>
+                                <button onclick="location.reload();" class="btn btn-success boton" >
+                                    <i class="fas fa-sync"></i> Actualizar
+                                </button>
+                        </div>
+                    </form>
+                </div>

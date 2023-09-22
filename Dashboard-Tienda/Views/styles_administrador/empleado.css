@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width :50rem!important;
+    height: 30rem !important;
+
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fa0303;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar a {
+    font-size: 1rem !important;
+    color: white;
+}
+/* modificacion para el menu responsive */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        z-index: 999;
+        transition: all 0.3s;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #sidebar .nav-link {
+        text-align: center;
+    }
+
+    #sidebar .fas {
+        margin-right: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+.sidebar a:hover{
+    background:#fcfcfc;
+    color: black;
+    border-radius: 5px;
+}
+h1{
+    cursor: default;
+}
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+.boton{
+    width: 7rem; 
+    font-size: 0.9rem !important;
+}
+#btn_agregar, #btn_editar,#btn_eliminar{
+    background-image: linear-gradient(to right bottom , rgba(4, 199, 159, 0.
+    ),rgba(14, 199, 159, 0));
+    color : rgb(14, 0, 0) ;
+}
+
+/*modificacion del model del formulario del empleado*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el botón de abrir el modal */
+.open-modal-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario dentro del modal */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form label {
+    margin-bottom: 5px;
+}
+
+.modal-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.modal-form button {
+    background-color: #007BFF !important;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para los iconos */
+.fa-icon {
+    margin-right: 5px;
+}
